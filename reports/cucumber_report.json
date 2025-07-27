@@ -1,0 +1,113 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "homepage;user-can-search-on-ajbell",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User can search on ajbell",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user navigates to \"https://www.ajbell.co.uk/\"",
+            "match": {
+              "location": "features\\step-definitions\\homepage.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4098864599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user types \"investment\" in the search box",
+            "match": {
+              "location": "features\\step-definitions\\homepage.steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 448095599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the user should see search results",
+            "match": {
+              "location": "features\\step-definitions\\homepage.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 534966600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "homepage;user-can-search-on-ajbell",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "User can search on ajbell",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "the user navigates to \"https://www.ajbell.co.uk/\"",
+            "match": {
+              "location": "features\\step-definitions\\homepage.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4183538900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user hover over ISA",
+            "match": {
+              "location": "features\\step-definitions\\homepage.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 334171500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "return all the options in a list",
+            "match": {
+              "location": "features\\step-definitions\\homepage.steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 333501800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "homepage",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "homepage",
+    "tags": [],
+    "uri": "features\\homepage.feature"
+  }
+]
