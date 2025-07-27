@@ -19,27 +19,26 @@ When('the user types {string} in the search box', async function (query) {
 });
 
 Then('the user should see search results', async function () {
-  await page.waitForSelector('#row-article > div > div > div.result-list-items');
-  const resultsVisible = await page.isVisible('#row-article > div > div > div.result-list-items');
+  await page.waitForSelector('#row-hub_flexible');
+  const resultsVisible = await page.isVisible('#row-hub_flexible');
   expect(resultsVisible).to.be.true;
   await browser.close();
 });
 
-When('the user hover over ISA', async function () {
-  await page.getByRole('button', { name: 'ISAs' }).hover();
+When('the user hovers over {string}', async function (menuName) {
+ await page.getByRole('button', { name: menuName }).hover();
 });
 
-Then('return all the options in a list', async function () {
-
-  const isalist = await page.locator('#isaAccountsMenu').getByRole('list')
-  const count = await isalist.count();
+Then('return all the options from {string} in a list', async function (listName) {
+  const dynamicSelector =`#${listName}AccountsMenu li`
+  const homepageList = await page.locator(dynamicSelector)
+  const count = await homepageList.count();
   const optionlist = [];
 
   for (let i=0 ; i< count ; i++){
-    optionlist.push(await isalist.nth(i).innerText());
+    optionlist.push(await homepageList.nth(i).innerText());
 
   }
 console.log('isa list', optionlist);
 await browser.close();
 });
-
