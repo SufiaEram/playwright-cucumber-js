@@ -1,4 +1,4 @@
-Feature: homepage
+Feature: homepage interactions 
 
  Scenario: User can search on ajbell
     Given the user navigates to "https://www.ajbell.co.uk/"
@@ -6,7 +6,7 @@ Feature: homepage
     Then the user should see search results
 
 
- Scenario: User can search on ajbell
+ Scenario: User can get list of menu option from homepage
     Given the user navigates to "https://www.ajbell.co.uk/"
     When the user hovers over "investing" 
-    Then return all the options from "our" in a list
+    Then return all the options from "ourAccounts" in a menu

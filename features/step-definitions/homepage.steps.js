@@ -29,8 +29,8 @@ When('the user hovers over {string}', async function (menuName) {
  await page.getByRole('button', { name: menuName }).hover();
 });
 
-Then('return all the options from {string} in a list', async function (listName) {
-  const dynamicSelector =`#${listName}AccountsMenu li`
+Then('return all the options from {string} in a menu', async function (listName) {
+  const dynamicSelector =`#${listName}Menu li`
   const homepageList = await page.locator(dynamicSelector)
   const count = await homepageList.count();
   const optionlist = [];
