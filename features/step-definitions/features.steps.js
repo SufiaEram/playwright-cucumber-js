@@ -88,5 +88,5 @@ Then('verify the split in weight and amount in the table', async function () {
  });
 
  When('I click the {string} button in the popup', async function (buttonName) {
-   await page.getByRole('button', { name: buttonName+' modal' }).click();
+  await browser.close();
  });
